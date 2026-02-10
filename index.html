@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sorpresa ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff4e50, #f9d423);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    h1 { font-size: 2.5em; }
+    p { font-size: 1.2em; max-width: 500px; margin: 20px auto; }
+    .btn {
+      background: white;
+      color: #ff4e50;
+      border: none;
+      padding: 14px 24px;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>💌 Tengo algo que decirte</h1>
+
+<button class="btn" onclick="playMusic()">▶ Música</button>
+<button class="btn" onclick="mostrarMensaje()">💖 Ver mensaje</button>
+
+<p id="mensaje" style="display:none;">
+  Eres la persona más especial de mi vida.  
+  Gracias por estar conmigo. Te amo ❤️
+</p>
+
+<audio id="audio" src="musica.mp3"></audio>
+
+<script>
+function playMusic() {
+  document.getElementById("audio").play();
+}
+
+function mostrarMensaje() {
+  document.getElementById("mensaje").style.display = "block";
+}
+</script>
+
+</body>
+</html>
